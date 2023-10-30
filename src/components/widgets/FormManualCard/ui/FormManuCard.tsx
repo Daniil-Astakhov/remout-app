@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable no-console */
 /* eslint-disable camelcase */
 
@@ -115,6 +116,7 @@ const FormManualCard: FC<FormProps> = memo(
 								</div>
 								<input
 									className={style.input}
+									// @ts-ignore
 									inert="true"
 									id="barcode"
 									defaultValue={barcode ?? ""}
@@ -133,6 +135,7 @@ const FormManualCard: FC<FormProps> = memo(
 
 								<input
 									className={style.input}
+									// @ts-ignore
 									inert="true"
 									id="region"
 									defaultValue={region ?? ""}
