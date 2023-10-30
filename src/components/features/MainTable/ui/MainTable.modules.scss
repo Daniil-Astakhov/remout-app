@@ -1,0 +1,6 @@
+.columnContent {
+	@apply text-[15px] text-[#000000cb]  capitalize  md:w-[200px];
+}
+.table {
+	@apply duration-[50ms]  delay-0 hover:bg-[#7eb6f69a] cursor-[pointer] h-[50px] border-b border-b-[#03020213];
+}

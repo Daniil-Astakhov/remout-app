@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("./fonts.css");
+
+* {
+	font-family: "Futura PT", sans-serif;
+	box-sizing: border-box;
+}
+
+:root {
+	// --foreground-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	// --background-start-rgb: 0, 0, 0;
+	// --background-end-rgb: 0, 0, 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		// --foreground-rgb: 0, 0, 0;
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	@apply h-[100vh];
+	overflow: hidden;
+	color: rgb(var(--foreground-rgb));
+	// background: linear-gradient(
+	// 		to bottom,
+	// 		transparent,
+	// 		rgb(var(--background-end-rgb))
+	// 	)
+	// 	rgb(var(--background-start-rgb));
+}
+// input {
+// 	--tw-ring-shadow: #ffffff00 !important;
+// 	border: none !important;
+// 	&:focus {
+// 		--tw-ring-color: #ffffff00 !important;
+// 	}
+// }
+
+// .MuiOutlinedInput-root {
+// 	color: rgb(0, 0, 0) !important;
+// 	border-radius: 8px !important;
+// 	background: white;
+// 	height: 50px !important;
+// 	width: 200px !important;
+// }
+// .MuiInputLabel-root {
+// 	color: rgb(255, 255, 255) !important;
+// }
+// #valid_at-label {
+// 	color: white !important;
+// }
+#expire-date {
+	width: 200px !important;
+	height: 30px !important;
+	border-radius: 8px;
+}
+
+fieldset {
+	top: -6px !important;
+	width: 202px;
+	height: 36px;
+	border-width: 2px !important;
+	border-radius: 8px;
+}
+.MuiInputBase-sizeSmall {
+	border-radius: 8px !important;
+}
+.MuiInputBase-formControl {
+	border-radius: 8px !important;
+}
+.MuiFormControl-root {
+	width: 202px !important;
+	padding: 0 !important;
+	border-radius: 8px !important;
+}
+.MuiInputBase-root {
+	border-radius: 8px !important;
+	@apply h-[30px] rounded-[8px];
+}
+main {
+	@apply flex  max-h-screen flex-col items-center p-1;
+}
+.blur {
+	--tw-blur: blur(0px);
+}

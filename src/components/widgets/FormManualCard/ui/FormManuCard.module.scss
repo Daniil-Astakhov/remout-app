@@ -1,0 +1,41 @@
+.wrap {
+	@apply flex min-h-full w-full flex-1 flex-col justify-center px-6 py-12 lg:px-8;
+	header {
+		@apply flex flex-col justify-center items-center sm:mx-auto  sm:w-full sm:max-w-sm;
+		Image {
+			@apply mx-auto h-auto w-logo;
+		}
+		h2 {
+			@apply text-center text-xxl sm:text-xxl font-bold leading-9 tracking-tight text-white;
+		}
+	}
+}
+.inputWrap {
+	@apply gap-2 flex flex-col items-center justify-center max-w-[300px] h-[82px];
+}
+.formWrap {
+	@apply w-full  sm:mx-auto p-6 border-borderBlack border-1 rounded;
+
+	background: rgba(255, 255, 255, 0.062);
+	box-shadow: 3px 4px 10px 0px rgba(255, 255, 255, 0.04);
+	backdrop-filter: blur(28.5px);
+	form {
+		@apply relative w-full justify-center items-center flex flex-col gap-8;
+		.gridWrap {
+			@apply grid w-full grid-cols-2 justify-center gap-[10px];
+		}
+	}
+}
+.label {
+	@apply block text-sm font-medium leading-6 text-black;
+}
+
+.input {
+	@apply block p-2 rounded-[8px] border-[1px] border-[#3b3b3bd5] py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 h-[30px] w-[200px];
+}
+.btn {
+	@apply relative bottom-[-10px] flex w-[150px] justify-center rounded-md bg-[#006fee] px-3 py-1.5 font-normal leading-6 text-white shadow-sm hover:bg-[#F54180] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+.forgot {
+	@apply flex items-center justify-between;
+}

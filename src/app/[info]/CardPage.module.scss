@@ -1,0 +1,9 @@
+.section {
+	@apply flex h-full max-h-screen w-dw flex-col items-center p-1;
+}
+.cardWrap {
+	@apply w-full h-[50%] flex flex-col justify-center items-center bg-white rounded-none;
+}
+.historyWrap {
+	@apply flex w-full h-[50%] justify-center items-center;
+}

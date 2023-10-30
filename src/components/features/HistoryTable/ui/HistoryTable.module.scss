@@ -1,0 +1,25 @@
+.pWrap {
+	@apply sm:flex-row flex-col flex w-[fit-content] p-[5px] gap-[10px];
+}
+.pTitle {
+	@apply text-[15px] text-[#71717A];
+}
+
+.pContent {
+	@apply text-[15px] text-[#000];
+}
+.divWrap {
+	@apply flex justify-around gap-4;
+}
+.spanWrap {
+	@apply w-[200px] break-words text-center;
+}
+.modalWrap {
+	@apply flex gap-4 flex-col;
+}
+.columnContent {
+	@apply text-sm capitalize text-[#000000c7];
+}
+.loader {
+	@apply flex flex-col justify-center items-center text-black w-full text-center absolute bottom-[50%];
+}

@@ -1,0 +1,6 @@
+.section {
+	@apply w-full h-[100vh] bg-white;
+}
+.tableWrap {
+	@apply flex flex-col h-full w-full items-center justify-center;
+}
